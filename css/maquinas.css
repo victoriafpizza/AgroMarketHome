@@ -109,3 +109,14 @@
     font-size: 34px;
   }
 }
+
+.btn-ver-detalhes-maquina {
+  display: inline-block;
+  background: #1d5c3b;
+  color: white;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}

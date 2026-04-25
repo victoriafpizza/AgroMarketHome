@@ -1,0 +1,248 @@
+.detalhe-maquina-container {
+  background: #f4f8ef;
+  padding: 40px 60px;
+}
+
+.maquina-box {
+  background: white;
+  border-radius: 18px;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 320px;
+  gap: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.galeria-maquina {
+  display: flex;
+  gap: 18px;
+}
+
+.miniaturas {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.miniatura {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #d9e5d4;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.miniatura i {
+  font-size: 26px;
+  color: #1d5c3b;
+}
+
+.miniatura.ativa {
+  border: 2px solid #2f80ed;
+}
+
+.imagem-principal {
+  flex: 1;
+  min-height: 420px;
+  background: #eaf6df;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagem-principal i {
+  font-size: 140px;
+  color: #1d5c3b;
+}
+
+.status {
+  color: #5d6b5d;
+  font-size: 14px;
+}
+
+.info-maquina h1 {
+  font-size: 30px;
+  color: #123f2a;
+  margin: 12px 0;
+}
+
+.info-maquina h2 {
+  font-size: 38px;
+  color: #123f2a;
+  margin-bottom: 8px;
+}
+
+.preco-info {
+  color: #5d6b5d;
+  margin-bottom: 20px;
+}
+
+.localizacao {
+  background: #f4f8ef;
+  padding: 14px;
+  border-radius: 12px;
+  color: #123f2a;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.botoes-maquina {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.botoes-maquina button,
+.proprietario-box button {
+  width: 100%;
+  border: none;
+  padding: 15px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn-primary {
+  background: #2f80ed;
+  color: white;
+}
+
+.btn-secondary {
+  background: #d9eaff;
+  color: #2f80ed;
+}
+
+.btn-whatsapp {
+  background: #1d5c3b;
+  color: white;
+}
+
+.proprietario-box {
+  border: 1px solid #d9e5d4;
+  border-radius: 18px;
+  padding: 22px;
+  height: fit-content;
+}
+
+.proprietario-box h3 {
+  color: #123f2a;
+  margin-bottom: 18px;
+}
+
+.proprietario {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  background: #d9f2c7;
+  color: #1d5c3b;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.proprietario p,
+.info-extra p {
+  color: #5d6b5d;
+  margin-top: 4px;
+}
+
+.info-extra {
+  border-top: 1px solid #d9e5d4;
+  border-bottom: 1px solid #d9e5d4;
+  padding: 15px 0;
+  margin-bottom: 18px;
+}
+
+.info-extra p {
+  margin-bottom: 10px;
+}
+
+.info-extra i {
+  color: #1d5c3b;
+  margin-right: 8px;
+}
+
+.proprietario-box button {
+  background: #f5c542;
+  color: #123f2a;
+}
+
+.especificacoes,
+.descricao-maquina,
+.condicoes-locacao {
+  background: white;
+  border-radius: 18px;
+  margin-top: 25px;
+  padding: 30px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+.especificacoes h2,
+.descricao-maquina h2,
+.condicoes-locacao h2 {
+  color: #123f2a;
+  margin-bottom: 18px;
+}
+
+.spec-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.spec-grid div {
+  background: #f4f8ef;
+  padding: 14px;
+  border-radius: 12px;
+  color: #5d6b5d;
+}
+
+.descricao-maquina p {
+  color: #5d6b5d;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+
+.condicoes-locacao ul {
+  padding-left: 20px;
+  color: #5d6b5d;
+  line-height: 1.8;
+}
+
+@media (max-width: 1100px) {
+  .maquina-box {
+    grid-template-columns: 1fr;
+  }
+
+  .detalhe-maquina-container {
+    padding: 20px;
+  }
+
+  .galeria-maquina {
+    flex-direction: column;
+  }
+
+  .miniaturas {
+    flex-direction: row;
+  }
+
+  .spec-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .imagem-principal {
+    min-height: 300px;
+  }
+}
