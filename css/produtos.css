@@ -79,3 +79,14 @@
     padding: 20px;
   }
 }
+
+.btn-ver-detalhes {
+  display: inline-block;
+  margin-top: 15px;
+  background: #1d5c3b;
+  color: white;
+  text-decoration: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-weight: bold;
+}
