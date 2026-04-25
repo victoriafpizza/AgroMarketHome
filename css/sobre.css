@@ -1,0 +1,157 @@
+.sobre-hero {
+  min-height: 480px;
+  padding: 70px 60px;
+  background: linear-gradient(135deg, #d9f2c7, #6fbf73, #1d5c3b);
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  align-items: center;
+  gap: 40px;
+  color: white;
+}
+
+.sobre-hero h1 {
+  font-size: 52px;
+  line-height: 1.1;
+  margin: 25px 0 20px;
+}
+
+.sobre-hero p {
+  font-size: 20px;
+  line-height: 1.5;
+  max-width: 650px;
+}
+
+.sobre-imagem {
+  height: 320px;
+  background: rgba(255,255,255,0.18);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sobre-imagem i {
+  font-size: 130px;
+  color: #f5c542;
+}
+
+.sobre-conteudo {
+  padding: 70px 60px;
+  background: #f4f8ef;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 30px;
+}
+
+.sobre-conteudo h2,
+.missao h2,
+.valores h2 {
+  color: #123f2a;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.sobre-conteudo p {
+  color: #5d6b5d;
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.card-info {
+  background: white;
+  border-radius: 24px;
+  padding: 35px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.card-info i {
+  font-size: 55px;
+  color: #1d5c3b;
+  margin-bottom: 20px;
+}
+
+.card-info h3 {
+  color: #123f2a;
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+.missao {
+  padding: 70px 60px;
+  text-align: center;
+  background: white;
+}
+
+.missao-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.missao-grid div {
+  background: #f4f8ef;
+  padding: 35px;
+  border-radius: 24px;
+}
+
+.missao-grid i {
+  font-size: 45px;
+  color: #2f80ed;
+  margin-bottom: 18px;
+}
+
+.missao-grid h3 {
+  color: #123f2a;
+  margin-bottom: 10px;
+}
+
+.missao-grid p {
+  color: #5d6b5d;
+  line-height: 1.5;
+}
+
+.valores {
+  padding: 70px 60px;
+  background: #eaf6df;
+  text-align: center;
+}
+
+.valores-lista {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.valores-lista div {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  color: #123f2a;
+  font-weight: bold;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+@media (max-width: 900px) {
+  .sobre-hero,
+  .sobre-conteudo,
+  .missao-grid,
+  .valores-lista {
+    grid-template-columns: 1fr;
+  }
+
+  .sobre-hero {
+    padding: 50px 20px;
+  }
+
+  .sobre-hero h1 {
+    font-size: 36px;
+  }
+
+  .sobre-conteudo,
+  .missao,
+  .valores {
+    padding: 50px 20px;
+  }
+}
