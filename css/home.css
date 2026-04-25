@@ -1,0 +1,102 @@
+.home-hero {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #6fbf73, #1d5c3b);
+  color: white;
+}
+
+.home-hero h1 {
+  font-size: 48px;
+  margin-top: 20px;
+}
+
+.home-hero p {
+  margin: 15px 0 25px;
+  font-size: 18px;
+}
+
+.home-categorias {
+  padding: 60px;
+  text-align: center;
+}
+
+.categoria-cards {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.categoria-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  width: 220px;
+  text-decoration: none;
+  color: #123f2a;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.categoria-card i {
+  font-size: 40px;
+  color: #2f80ed;
+  margin-bottom: 15px;
+}
+
+.home-destaques {
+  padding: 60px;
+  background: #eaf6df;
+  text-align: center;
+}
+
+.destaques-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.destaque-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.destaque-card i {
+  font-size: 40px;
+  color: #1d5c3b;
+  margin-bottom: 10px;
+}
+
+.home-cta {
+  padding: 70px;
+  background: #123f2a;
+  color: white;
+  text-align: center;
+}
+
+.home-cta button {
+  background: #f5c542;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .categoria-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .destaques-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-categorias,
+  .home-destaques {
+    padding: 30px;
+  }
+}

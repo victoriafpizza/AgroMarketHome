@@ -1,0 +1,150 @@
+.fretes-hero {
+  padding: 70px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #2f80ed, #6fbf73, #1d5c3b);
+  color: white;
+}
+
+.fretes-hero h1 {
+  font-size: 42px;
+}
+
+.fretes-hero p {
+  margin: 12px 0 30px;
+  font-size: 18px;
+}
+
+.rota-box {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  padding: 20px;
+  border-radius: 22px;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 15px;
+  align-items: end;
+}
+
+.rota-box div {
+  text-align: left;
+}
+
+.rota-box label {
+  display: block;
+  color: #123f2a;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.rota-box input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 15px;
+}
+
+.rota-box button {
+  background: #f5c542;
+  color: #123f2a;
+  border: none;
+  padding: 15px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.filtros-fretes {
+  display: flex;
+  gap: 20px;
+  padding: 25px 60px;
+  justify-content: center;
+  background: #f4f8ef;
+}
+
+.filtros-fretes select {
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  min-width: 180px;
+}
+
+.fretes-lista {
+  padding: 40px 60px 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  background: #f4f8ef;
+}
+
+.frete-card {
+  background: white;
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.frete-icon {
+  height: 120px;
+  background: #d9f2c7;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.frete-icon i {
+  font-size: 48px;
+  color: #1d5c3b;
+}
+
+.frete-card h3 {
+  color: #123f2a;
+  margin-bottom: 12px;
+}
+
+.frete-card p {
+  color: #5d6b5d;
+  margin-bottom: 8px;
+}
+
+.frete-card span {
+  display: block;
+  color: #2f80ed;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 16px 0;
+}
+
+.frete-card button {
+  background: #1d5c3b;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .rota-box {
+    grid-template-columns: 1fr;
+  }
+
+  .filtros-fretes {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .fretes-lista {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .fretes-hero h1 {
+    font-size: 34px;
+  }
+}

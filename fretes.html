@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fretes | AgroMarket</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/fretes.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <i class="fa-solid fa-leaf"></i>
+      <span>AgroMarket</span>
+    </div>
+
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="maquinas.html">Máquinas</a>
+      <a href="fretes.html">Fretes</a>
+      <a href="como-funciona.html">Como funciona</a>
+    </nav>
+
+    <button class="btn-login">Entrar</button>
+  </header>
+
+  <section class="fretes-hero">
+    <h1>Fretes do Agro</h1>
+    <p>Encontre transporte para produtos, máquinas, animais e insumos.</p>
+
+    <div class="rota-box">
+      <div>
+        <label>De onde?</label>
+        <input type="text" placeholder="Ex: Ribeirão Preto - SP">
+      </div>
+
+      <div>
+        <label>Para onde?</label>
+        <input type="text" placeholder="Ex: Goiânia - GO">
+      </div>
+
+      <button>Buscar frete</button>
+    </div>
+  </section>
+
+  <section class="filtros-fretes">
+    <select>
+      <option>Tipo de carga</option>
+      <option>Grãos</option>
+      <option>Máquinas</option>
+      <option>Animais</option>
+      <option>Insumos</option>
+    </select>
+
+    <select>
+      <option>Tipo de veículo</option>
+      <option>Caminhão truck</option>
+      <option>Carreta</option>
+      <option>Bitrem</option>
+      <option>Baú</option>
+    </select>
+
+    <select>
+      <option>Preço</option>
+      <option>Até R$ 1.000</option>
+      <option>R$ 1.000 a R$ 3.000</option>
+      <option>Acima de R$ 3.000</option>
+    </select>
+  </section>
+
+  <section class="fretes-lista">
+
+    <div class="frete-card">
+      <div class="frete-icon">
+        <i class="fa-solid fa-truck"></i>
+      </div>
+      <h3>Transporte de grãos</h3>
+      <p><strong>De:</strong> Ribeirão Preto - SP</p>
+      <p><strong>Para:</strong> Goiânia - GO</p>
+      <span>R$ 2.500</span>
+      <button>Ver detalhes</button>
+    </div>
+
+    <div class="frete-card">
+      <div class="frete-icon">
+        <i class="fa-solid fa-truck-ramp-box"></i>
+      </div>
+      <h3>Transporte de máquinas</h3>
+      <p><strong>De:</strong> Campinas - SP</p>
+      <p><strong>Para:</strong> Uberaba - MG</p>
+      <span>R$ 3.800</span>
+      <button>Ver detalhes</button>
+    </div>
+
+    <div class="frete-card">
+      <div class="frete-icon">
+        <i class="fa-solid fa-cow"></i>
+      </div>
+      <h3>Transporte de animais</h3>
+      <p><strong>De:</strong> Campo Grande - MS</p>
+      <p><strong>Para:</strong> Londrina - PR</p>
+      <span>R$ 4.200</span>
+      <button>Ver detalhes</button>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div>
+      <h3>AgroMarket</h3>
+      <p>Conectando compradores, vendedores e transportadores do agro.</p>
+    </div>
+
+    <div>
+      <h4>Links</h4>
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="maquinas.html">Máquinas</a>
+      <a href="como-funciona.html">Como funciona</a>
+    </div>
+
+    <div>
+      <h4>Contato</h4>
+      <p>contato@agromarket.com</p>
+      <p>Brasil</p>
+    </div>
+  </footer>
+
+</body>
+</html>
