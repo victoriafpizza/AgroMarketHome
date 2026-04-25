@@ -1,0 +1,113 @@
+.cadastro-container {
+  background: #f4f8ef;
+  padding: 50px 20px;
+  min-height: calc(100vh - 80px);
+}
+
+.cadastro-box {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 24px;
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 40px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.cadastro-info {
+  background: linear-gradient(135deg, #6fbf73, #1d5c3b);
+  color: white;
+  border-radius: 22px;
+  padding: 35px;
+}
+
+.cadastro-info h1 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+
+.cadastro-info p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.cadastro-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.cadastro-form label {
+  font-weight: bold;
+  color: #123f2a;
+  margin-bottom: 8px;
+  margin-top: 15px;
+}
+
+.cadastro-form input,
+.cadastro-form select {
+  padding: 14px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  outline: none;
+}
+
+.email-box {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 10px;
+}
+
+.email-box button {
+  background: #f5c542;
+  color: #123f2a;
+  border: none;
+  padding: 0 18px;
+  border-radius: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.codigo-box {
+  display: none;
+  flex-direction: column;
+}
+
+.codigo-box small {
+  margin-top: 8px;
+  color: #1d5c3b;
+  font-weight: bold;
+}
+
+.btn-cadastrar {
+  margin-top: 25px;
+  background: #1d5c3b;
+  color: white;
+  border: none;
+  padding: 16px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn-cadastrar:hover {
+  background: #123f2a;
+}
+
+@media (max-width: 900px) {
+  .cadastro-box {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+
+  .email-box {
+    grid-template-columns: 1fr;
+  }
+
+  .cadastro-info h1 {
+    font-size: 32px;
+  }
+}

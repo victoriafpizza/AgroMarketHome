@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro | AgroMarket</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/cadastro.css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <i class="fa-solid fa-leaf"></i>
+      <span>AgroMarket</span>
+    </div>
+
+    <nav class="menu">
+      <a href="index.html">Início</a>
+      <a href="produtos.html">Produtos</a>
+      <a href="maquinas.html">Máquinas</a>
+      <a href="fretes.html">Fretes</a>
+      <a href="como-funciona.html">Como funciona</a>
+    </nav>
+
+    <button class="btn-login">Entrar</button>
+  </header>
+
+  <main class="cadastro-container">
+
+    <section class="cadastro-box">
+      <div class="cadastro-info">
+        <span class="tag">Cadastro AgroMarket</span>
+        <h1>Crie sua conta</h1>
+        <p>
+          Cadastre-se para comprar, vender ou anunciar produtos e máquinas do agronegócio.
+        </p>
+      </div>
+
+      <form class="cadastro-form" id="cadastroForm">
+
+        <label>Nome completo</label>
+        <input type="text" id="nome" placeholder="Digite seu nome completo" required>
+
+        <label>CPF</label>
+        <input type="text" id="cpf" placeholder="000.000.000-00" required>
+
+        <label>Data de nascimento</label>
+        <input type="date" id="nascimento" required>
+
+        <label>Foto do usuário</label>
+        <input type="file" id="foto" accept="image/*">
+
+        <label>E-mail</label>
+        <div class="email-box">
+          <input type="email" id="email" placeholder="Digite seu e-mail" required>
+          <button type="button" id="enviarCodigo">Enviar código</button>
+        </div>
+
+        <div class="codigo-box" id="codigoBox">
+          <label>Código de autenticação</label>
+          <input type="text" id="codigo" placeholder="Digite o código recebido por e-mail">
+          <small id="codigoMensagem"></small>
+        </div>
+
+        <label>Tipo de usuário</label>
+        <select id="tipoUsuario" required>
+          <option value="">Selecione uma opção</option>
+          <option value="compra-venda">Compra e venda</option>
+          <option value="compra">Só compra</option>
+          <option value="venda">Só venda</option>
+        </select>
+
+        <button type="submit" class="btn-cadastrar">Finalizar cadastro</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <script src="js/cadastro.js"></script>
+</body>
+</html>
