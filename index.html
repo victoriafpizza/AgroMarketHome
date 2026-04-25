@@ -4,9 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AgroMarket</title>
-
-  <!-- Favicon -->
-  <link rel="icon" href="img/favicon.png">
+  <link rel="icon" type="image/png" href="favicon.png">
 
   <link rel="stylesheet" href="css/style.css" />
 
@@ -26,7 +24,7 @@
     </div>
 
     <nav class="menu">
-      <a href="#">Início</a>
+      <a href="index.html">Início</a>
       <a href="produtos.html">Produtos</a>
       <a href="maquinas.html">Máquinas</a>
       <a href="fretes.html">Fretes</a>
@@ -35,7 +33,7 @@
     <a class="btn-login" href="cadastro.html">Cadastrar</a>
   </header>
 
-  <!-- HERO / ÁREA PRINCIPAL -->
+  <!-- HERO -->
   <section class="hero">
     <div class="hero-content">
       <span class="tag">Marketplace do Agronegócio</span>
@@ -47,36 +45,46 @@
         em todo o Brasil.
       </p>
 
-      <div class="search-box">
+      <form class="search-box" action="resultado-busca.html" method="GET">
         <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="O que você procura no agro?" />
-        <button>Buscar</button>
-      </div>
+        <input 
+          type="text" 
+          name="q" 
+          placeholder="O que você procura no agro?" 
+          required
+        />
+        <button type="submit">Buscar</button>
+      </form>
     </div>
   </section>
 
-  <!-- OPÇÕES PRINCIPAIS -->
+  <!-- OPÇÕES -->
   <section class="options">
     <h2>O que você procura?</h2>
 
     <div class="cards">
-      <div class="card">
+
+      <!-- PRODUTOS -->
+      <a href="produtos.html" class="card">
         <i class="fa-solid fa-seedling"></i>
         <h3>Produtos</h3>
         <p>Grãos, sementes, insumos e itens do campo.</p>
-      </div>
+      </a>
 
-      <div class="card">
+      <!-- MÁQUINAS -->
+      <a href="maquinas.html" class="card">
         <i class="fa-solid fa-tractor"></i>
         <h3>Máquinas</h3>
         <p>Venda e aluguel de tratores e equipamentos.</p>
-      </div>
+      </a>
 
-      <div class="card">
+      <!-- FRETES -->
+      <a href="fretes.html" class="card">
         <i class="fa-solid fa-truck"></i>
         <h3>Fretes</h3>
         <p>Transporte rural e parceiros para entrega.</p>
-      </div>
+      </a>
+
     </div>
   </section>
 
@@ -85,32 +93,37 @@
     <h2>Destaques do AgroMarket</h2>
 
     <div class="highlight-grid">
-      <div class="highlight-card">
+
+      <!-- MILHO -->
+      <a href="detalhe-produto.html" class="highlight-card">
         <div class="image-placeholder">
           <i class="fa-solid fa-wheat-awn"></i>
         </div>
         <h3>Saca de Milho</h3>
         <p>Produto disponível para negociação.</p>
         <strong>R$ consultar</strong>
-      </div>
+      </a>
 
-      <div class="highlight-card">
+      <!-- TRATOR -->
+      <a href="detalhe-maquina.html" class="highlight-card">
         <div class="image-placeholder">
           <i class="fa-solid fa-tractor"></i>
         </div>
         <h3>Trator para aluguel</h3>
         <p>Máquina disponível para uso rural.</p>
         <strong>R$ consultar</strong>
-      </div>
+      </a>
 
-      <div class="highlight-card">
+      <!-- GADO -->
+      <a href="detalhe-produto.html" class="highlight-card">
         <div class="image-placeholder">
           <i class="fa-solid fa-cow"></i>
         </div>
         <h3>Gado</h3>
         <p>Anúncio de animais para compra e venda.</p>
         <strong>R$ consultar</strong>
-      </div>
+      </a>
+
     </div>
   </section>
 
@@ -118,7 +131,9 @@
   <section class="cta">
     <h2>Quer vender ou alugar algo?</h2>
     <p>Anuncie seus produtos, máquinas ou serviços no AgroMarket.</p>
-    <button>Anunciar agora</button>
+    <a href="cadastro.html" class="btn-anunciar">
+      Anunciar agora
+    </a>
   </section>
 
   <!-- RODAPÉ -->

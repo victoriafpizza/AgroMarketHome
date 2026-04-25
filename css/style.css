@@ -399,3 +399,20 @@ body {
     padding: 50px 20px;
   }
 }
+
+.card, .highlight-card {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.btn-anunciar {
+  display: inline-block;
+  background: #f5c542;
+  color: #123f2a;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}

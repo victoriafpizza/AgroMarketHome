@@ -13,12 +13,18 @@ button.addEventListener("click", () => {
 });
 
 // ENTER PARA BUSCAR
-input.addEventListener("keypress", (e) => {
-  if (e.key === "Enter") {
-    button.click();
+const input = document.querySelector(".search-box input");
+const button = document.querySelector(".search-box button");
+
+button.addEventListener("click", () => {
+  const valor = input.value.trim();
+
+  if (valor === "") {
+    alert("Digite algo para buscar");
+  } else {
+    window.location.href = `resultado-busca.html?q=${encodeURIComponent(valor)}`;
   }
 });
-
 // BOTÃO CTA
 const ctaButton = document.querySelector(".cta button");
 
