@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Detalhe do Pedido | AgroMarket</title>
+
+  <link rel="stylesheet" href="../css/vendedor.css" />
+  <link rel="stylesheet" href="../css/detalhe-pedido.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2>AgroMarket</h2>
+
+    <nav>
+      <a href="painel.html">
+        <i class="fa-solid fa-chart-line"></i> Painel
+      </a>
+
+      <a href="meus-anuncios.html">
+        <i class="fa-solid fa-box"></i> Meus Anúncios
+      </a>
+
+      <a href="novo-anuncio.html">
+        <i class="fa-solid fa-plus"></i> Novo Anúncio
+      </a>
+
+      <a href="pedidos.html" class="ativo">
+        <i class="fa-solid fa-clipboard-list"></i> Pedidos
+      </a>
+
+      <a href="mensagens.html">
+        <i class="fa-solid fa-comments"></i> Mensagens
+      </a>
+
+      <a href="perfil.html">
+        <i class="fa-solid fa-user"></i> Perfil
+      </a>
+
+      <a href="suporte.html">
+        <i class="fa-solid fa-headset"></i> Suporte
+      </a>
+
+      <a href="../semlogin/index.html" class="sair">
+        <i class="fa-solid fa-right-from-bracket"></i> Sair
+      </a>
+    </nav>
+  </aside>
+
+  <main class="conteudo">
+
+    <header class="topo">
+      <div>
+        <h1>Detalhe do Pedido</h1>
+        <p>Veja as informações do comprador e do produto solicitado.</p>
+      </div>
+
+      <a href="pedidos.html" class="btn-principal">
+        <i class="fa-solid fa-arrow-left"></i> Voltar para pedidos
+      </a>
+    </header>
+
+    <section class="detalhe-grid">
+
+      <div class="detalhe-card pedido-principal">
+        <div class="status-linha">
+          <span class="status-detalhe novo">Novo pedido</span>
+          <span class="codigo-pedido">Pedido #AGM-1024</span>
+        </div>
+
+        <h2>Trator Massey Ferguson 275</h2>
+
+        <p class="descricao">
+          Comprador interessado em negociar o trator anunciado. O pedido ainda está aguardando resposta do vendedor.
+        </p>
+
+        <div class="produto-detalhe">
+          <img src="../img/trator.jpg" alt="Trator Massey Ferguson">
+
+          <div>
+            <h3>Informações do anúncio</h3>
+
+            <p>
+              <i class="fa-solid fa-tag"></i>
+              Valor anunciado: <strong>R$ 85.000,00</strong>
+            </p>
+
+            <p>
+              <i class="fa-solid fa-list"></i>
+              Categoria: Máquinas agrícolas
+            </p>
+
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+              Localização do produto: Goiânia - GO
+            </p>
+
+            <p>
+              <i class="fa-solid fa-calendar"></i>
+              Pedido recebido em 26/04/2026
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <aside class="detalhe-card comprador-card">
+        <h2>Comprador</h2>
+
+        <div class="comprador-avatar">JP</div>
+
+        <h3>João Pereira</h3>
+
+        <p>
+          <i class="fa-solid fa-location-dot"></i>
+          Goiânia - GO
+        </p>
+
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          (62) 99999-9999
+        </p>
+
+        <p>
+          <i class="fa-solid fa-envelope"></i>
+          joao.pereira@email.com
+        </p>
+
+        <div class="acoes-comprador">
+          <a href="mensagens.html" class="btn-conversar-detalhe">
+            <i class="fa-solid fa-comments"></i> Conversar
+          </a>
+
+          <a href="pedidos.html" class="btn-voltar-detalhe">
+            <i class="fa-solid fa-list"></i> Ver todos os pedidos
+          </a>
+        </div>
+      </aside>
+
+    </section>
+
+    <section class="detalhe-card linha-tempo-card">
+      <h2>Linha do tempo do pedido</h2>
+
+      <div class="timeline">
+
+        <div class="timeline-item ativo">
+          <span></span>
+          <div>
+            <strong>Pedido recebido</strong>
+            <p>O comprador demonstrou interesse no anúncio.</p>
+            <small>26/04/2026 às 09:30</small>
+          </div>
+        </div>
+
+        <div class="timeline-item ativo">
+          <span></span>
+          <div>
+            <strong>Primeira mensagem enviada</strong>
+            <p>O vendedor respondeu ao comprador.</p>
+            <small>26/04/2026 às 09:34</small>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span></span>
+          <div>
+            <strong>Negociação em andamento</strong>
+            <p>Aguardando definição de pagamento, entrega ou retirada.</p>
+            <small>Pendente</small>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span></span>
+          <div>
+            <strong>Pedido finalizado</strong>
+            <p>Negociação concluída entre vendedor e comprador.</p>
+            <small>Pendente</small>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="detalhe-card observacoes-card">
+      <h2>Observações do vendedor</h2>
+
+      <form action="detalhe-pedido.html">
+        <textarea placeholder="Adicione uma observação sobre este pedido..."></textarea>
+
+        <div class="botoes-observacao">
+          <a href="pedidos.html" class="btn-cancelar-observacao">
+            Cancelar
+          </a>
+
+          <button type="submit" class="btn-salvar-observacao">
+            <i class="fa-solid fa-floppy-disk"></i> Salvar observação
+          </button>
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+</body>
+</html>

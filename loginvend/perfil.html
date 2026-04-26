@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Perfil do Vendedor | AgroMarket</title>
+
+  <link rel="stylesheet" href="../css/vendedor.css" />
+  <link rel="stylesheet" href="../css/perfil.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2>AgroMarket</h2>
+
+    <nav>
+      <a href="painel.html">
+        <i class="fa-solid fa-chart-line"></i> Painel
+      </a>
+
+      <a href="meus-anuncios.html">
+        <i class="fa-solid fa-box"></i> Meus Anúncios
+      </a>
+
+      <a href="novo-anuncio.html">
+        <i class="fa-solid fa-plus"></i> Novo Anúncio
+      </a>
+
+      <a href="pedidos.html">
+        <i class="fa-solid fa-clipboard-list"></i> Pedidos
+      </a>
+
+      <a href="mensagens.html">
+        <i class="fa-solid fa-comments"></i> Mensagens
+      </a>
+
+      <a href="perfil.html" class="ativo">
+        <i class="fa-solid fa-user"></i> Perfil
+      </a>
+
+      <a href="suporte.html">
+        <i class="fa-solid fa-headset"></i> Suporte
+      </a>
+
+      <a href="../semlogin/index.html" class="sair">
+        <i class="fa-solid fa-right-from-bracket"></i> Sair
+      </a>
+    </nav>
+  </aside>
+
+  <main class="conteudo">
+
+    <header class="topo">
+      <div>
+        <h1>Perfil do Vendedor</h1>
+        <p>Gerencie seus dados, contato e informações comerciais.</p>
+      </div>
+
+      <a href="meus-anuncios.html" class="btn-principal">
+        <i class="fa-solid fa-box"></i> Meus anúncios
+      </a>
+    </header>
+
+    <section class="perfil-grid">
+
+      <div class="perfil-card usuario-card">
+        <div class="foto-perfil">
+          <div class="avatar-perfil">
+            <i class="fa-solid fa-user"></i>
+          </div>
+
+          <label for="fotoVendedor" class="btn-foto">
+            <i class="fa-solid fa-camera"></i> Alterar foto
+          </label>
+
+          <input type="file" id="fotoVendedor" accept="image/*">
+        </div>
+
+        <h2>Agro Silva</h2>
+        <p>Vendedor verificado</p>
+
+        <div class="selo-verificado">
+          <i class="fa-solid fa-circle-check"></i>
+          Perfil ativo no AgroMarket
+        </div>
+      </div>
+
+      <div class="perfil-card">
+        <h2>Dados pessoais</h2>
+
+        <form class="form-perfil" action="perfil.html">
+
+          <div class="linha-form">
+            <div class="grupo-form">
+              <label>Nome completo</label>
+              <input type="text" value="Carlos Silva">
+            </div>
+
+            <div class="grupo-form">
+              <label>Nome comercial</label>
+              <input type="text" value="Agro Silva">
+            </div>
+          </div>
+
+          <div class="linha-form">
+            <div class="grupo-form">
+              <label>E-mail</label>
+              <input type="email" value="contato@agrosilva.com">
+            </div>
+
+            <div class="grupo-form">
+              <label>Telefone / WhatsApp</label>
+              <input type="tel" value="(11) 99999-9999">
+            </div>
+          </div>
+
+          <div class="linha-form">
+            <div class="grupo-form">
+              <label>Estado</label>
+              <select>
+                <option>SP</option>
+                <option>MG</option>
+                <option>GO</option>
+                <option>PR</option>
+                <option>MT</option>
+                <option>MS</option>
+                <option>BA</option>
+                <option>RS</option>
+              </select>
+            </div>
+
+            <div class="grupo-form">
+              <label>Cidade</label>
+              <input type="text" value="Ribeirão Preto">
+            </div>
+          </div>
+
+          <div class="grupo-form">
+            <label>Tipo de vendedor</label>
+            <select>
+              <option>Produtor rural</option>
+              <option>Loja agropecuária</option>
+              <option>Locador de máquinas</option>
+              <option>Prestador de serviço rural</option>
+              <option>Cooperativa</option>
+            </select>
+          </div>
+
+          <div class="grupo-form">
+            <label>Sobre o vendedor</label>
+            <textarea>Atuamos no mercado agro há mais de 10 anos, oferecendo produtos agrícolas, máquinas e insumos para produtores da região.</textarea>
+          </div>
+
+          <div class="botoes-perfil">
+            <a href="painel.html" class="btn-cancelar-perfil">
+              Cancelar
+            </a>
+
+            <button type="submit" class="btn-salvar-perfil">
+              <i class="fa-solid fa-floppy-disk"></i> Salvar alterações
+            </button>
+          </div>
+
+        </form>
+      </div>
+
+    </section>
+
+    <section class="perfil-card seguranca-card">
+      <h2>Segurança da conta</h2>
+
+      <div class="seguranca-opcoes">
+
+        <a href="alterar-senha.html" class="seguranca-item">
+          <i class="fa-solid fa-lock"></i>
+          <div>
+            <strong>Alterar senha</strong>
+            <p>Atualize sua senha de acesso ao painel.</p>
+          </div>
+          <span><i class="fa-solid fa-chevron-right"></i></span>
+        </a>
+
+        <a href="suporte.html" class="seguranca-item">
+          <i class="fa-solid fa-headset"></i>
+          <div>
+            <strong>Preciso de ajuda</strong>
+            <p>Fale com o suporte do AgroMarket.</p>
+          </div>
+          <span><i class="fa-solid fa-chevron-right"></i></span>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+</body>
+</html>

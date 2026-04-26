@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Mensagens | AgroMarket</title>
+
+  <link rel="stylesheet" href="../css/vendedor.css" />
+  <link rel="stylesheet" href="../css/mensagens.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2>AgroMarket</h2>
+
+    <nav>
+      <a href="painel.html">
+        <i class="fa-solid fa-chart-line"></i> Painel
+      </a>
+
+      <a href="meus-anuncios.html">
+        <i class="fa-solid fa-box"></i> Meus Anúncios
+      </a>
+
+      <a href="novo-anuncio.html">
+        <i class="fa-solid fa-plus"></i> Novo Anúncio
+      </a>
+
+      <a href="pedidos.html">
+        <i class="fa-solid fa-clipboard-list"></i> Pedidos
+      </a>
+
+      <a href="mensagens.html" class="ativo">
+        <i class="fa-solid fa-comments"></i> Mensagens
+      </a>
+
+      <a href="perfil.html">
+        <i class="fa-solid fa-user"></i> Perfil
+      </a>
+
+      <a href="suporte.html">
+        <i class="fa-solid fa-headset"></i> Suporte
+      </a>
+
+      <a href="../semlogin/index.html" class="sair">
+        <i class="fa-solid fa-right-from-bracket"></i> Sair
+      </a>
+    </nav>
+  </aside>
+
+  <main class="conteudo">
+
+    <header class="topo">
+      <div>
+        <h1>Mensagens</h1>
+        <p>Converse com compradores interessados nos seus anúncios.</p>
+      </div>
+
+      <a href="pedidos.html" class="btn-principal">
+        <i class="fa-solid fa-clipboard-list"></i> Ver pedidos
+      </a>
+    </header>
+
+    <section class="chat-container">
+
+      <aside class="lista-contatos">
+        <div class="busca-chat">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Buscar conversa..." />
+        </div>
+
+        <a href="mensagens.html" class="contato ativo-chat">
+          <div class="avatar">JP</div>
+          <div class="contato-info">
+            <strong>João Pereira</strong>
+            <span>Tenho interesse no trator...</span>
+          </div>
+          <small>09:45</small>
+        </a>
+
+        <a href="mensagens.html" class="contato">
+          <div class="avatar">MS</div>
+          <div class="contato-info">
+            <strong>Maria Santos</strong>
+            <span>Qual o valor para 50 sacos?</span>
+          </div>
+          <small>Ontem</small>
+        </a>
+
+        <a href="mensagens.html" class="contato">
+          <div class="avatar">AS</div>
+          <div class="contato-info">
+            <strong>Agro Silva</strong>
+            <span>Obrigado pela negociação.</span>
+          </div>
+          <small>22/04</small>
+        </a>
+      </aside>
+
+      <section class="janela-chat">
+
+        <div class="chat-topo">
+          <div class="chat-user">
+            <div class="avatar grande">JP</div>
+            <div>
+              <h2>João Pereira</h2>
+              <p>Interessado em: Trator Massey Ferguson 275</p>
+            </div>
+          </div>
+
+          <a href="detalhe-pedido.html" class="btn-detalhes">
+            <i class="fa-solid fa-eye"></i> Ver pedido
+          </a>
+        </div>
+
+        <div class="chat-mensagens" id="chatMensagens">
+
+          <div class="mensagem recebida">
+            <p>Olá, ainda está disponível o Trator Massey Ferguson?</p>
+            <span>09:30</span>
+          </div>
+
+          <div class="mensagem enviada">
+            <p>Olá, João! Sim, ainda está disponível.</p>
+            <span>09:34</span>
+          </div>
+
+        </div>
+
+        <form class="chat-envio" id="formMensagem">
+          <input type="text" id="inputMensagem" placeholder="Digite sua mensagem..." />
+
+          <button type="submit">
+            <i class="fa-solid fa-paper-plane"></i>
+            Enviar
+          </button>
+        </form>
+
+      </section>
+
+    </section>
+
+  </main>
+
+  <script>
+    const formMensagem = document.getElementById("formMensagem");
+    const inputMensagem = document.getElementById("inputMensagem");
+    const chatMensagens = document.getElementById("chatMensagens");
+
+    formMensagem.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const texto = inputMensagem.value.trim();
+
+      if (texto === "") return;
+
+      const horario = new Date().toLocaleTimeString("pt-BR", {
+        hour: "2-digit",
+        minute: "2-digit"
+      });
+
+      const novaMensagem = document.createElement("div");
+      novaMensagem.classList.add("mensagem", "enviada");
+
+      novaMensagem.innerHTML = `
+        <p>${texto}</p>
+        <span>${horario}</span>
+      `;
+
+      chatMensagens.appendChild(novaMensagem);
+
+      inputMensagem.value = "";
+
+      chatMensagens.scrollTop = chatMensagens.scrollHeight;
+    });
+  </script>
+
+</body>
+</html>

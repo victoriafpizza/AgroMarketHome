@@ -1,0 +1,273 @@
+.detalhe-grid {
+  display: grid;
+  grid-template-columns: 1fr 330px;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.detalhe-card {
+  background: white;
+  padding: 28px;
+  border-radius: 20px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.detalhe-card h2 {
+  color: #1f5f2e;
+  margin-bottom: 18px;
+}
+
+.status-linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.status-detalhe {
+  padding: 8px 14px;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.status-detalhe.novo {
+  background: #e5f2ff;
+  color: #0b5cad;
+}
+
+.codigo-pedido {
+  color: #777;
+  font-weight: bold;
+}
+
+.pedido-principal h2 {
+  font-size: 28px;
+}
+
+.descricao {
+  color: #666;
+  margin-bottom: 22px;
+  line-height: 1.5;
+}
+
+.produto-detalhe {
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  gap: 22px;
+  align-items: center;
+  background: #f3f7f1;
+  padding: 18px;
+  border-radius: 18px;
+}
+
+.produto-detalhe img {
+  width: 230px;
+  height: 170px;
+  object-fit: cover;
+  border-radius: 14px;
+  background: #e5e5e5;
+}
+
+.produto-detalhe h3 {
+  color: #1f5f2e;
+  margin-bottom: 12px;
+}
+
+.produto-detalhe p {
+  color: #555;
+  margin-bottom: 9px;
+}
+
+.produto-detalhe i {
+  color: #1f5f2e;
+  margin-right: 7px;
+}
+
+.comprador-card {
+  text-align: center;
+  height: fit-content;
+}
+
+.comprador-avatar {
+  width: 95px;
+  height: 95px;
+  background: #1f5f2e;
+  color: white;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.comprador-card h3 {
+  color: #1f5f2e;
+  margin-bottom: 15px;
+}
+
+.comprador-card p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.comprador-card i {
+  color: #1f5f2e;
+  margin-right: 6px;
+}
+
+.acoes-comprador {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.acoes-comprador a {
+  text-decoration: none;
+  padding: 13px;
+  border-radius: 12px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn-conversar-detalhe {
+  background: #1f5f2e;
+  color: white;
+}
+
+.btn-voltar-detalhe {
+  background: #e5f2e5;
+  color: #1f5f2e;
+}
+
+.acoes-comprador a:hover {
+  transform: translateY(-2px);
+}
+
+.linha-tempo-card,
+.observacoes-card {
+  margin-bottom: 25px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 14px;
+  position: relative;
+}
+
+.timeline-item span {
+  width: 18px;
+  height: 18px;
+  background: #ddd;
+  border-radius: 50%;
+  margin-top: 4px;
+}
+
+.timeline-item.ativo span {
+  background: #1f5f2e;
+}
+
+.timeline-item strong {
+  color: #1f5f2e;
+}
+
+.timeline-item p {
+  color: #666;
+  margin: 5px 0;
+}
+
+.timeline-item small {
+  color: #888;
+}
+
+.observacoes-card textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 14px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  resize: vertical;
+  outline: none;
+  font-size: 15px;
+}
+
+.observacoes-card textarea:focus {
+  border-color: #1f5f2e;
+}
+
+.botoes-observacao {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+  margin-top: 15px;
+}
+
+.btn-cancelar-observacao,
+.btn-salvar-observacao {
+  padding: 13px 20px;
+  border-radius: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn-cancelar-observacao {
+  background: #eeeeee;
+  color: #555;
+}
+
+.btn-salvar-observacao {
+  background: #1f5f2e;
+  color: white;
+}
+
+.btn-cancelar-observacao:hover {
+  background: #ddd;
+}
+
+.btn-salvar-observacao:hover {
+  background: #174a24;
+}
+
+@media (max-width: 900px) {
+  .detalhe-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .status-linha {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .produto-detalhe {
+    grid-template-columns: 1fr;
+  }
+
+  .produto-detalhe img {
+    width: 100%;
+    height: 220px;
+  }
+
+  .botoes-observacao {
+    flex-direction: column;
+  }
+
+  .btn-cancelar-observacao,
+  .btn-salvar-observacao {
+    width: 100%;
+    text-align: center;
+  }
+}

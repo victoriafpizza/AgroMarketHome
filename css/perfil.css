@@ -1,0 +1,235 @@
+.perfil-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.perfil-card {
+  background: white;
+  padding: 28px;
+  border-radius: 20px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+}
+
+.perfil-card h2 {
+  color: #1f5f2e;
+  margin-bottom: 20px;
+}
+
+.usuario-card {
+  text-align: center;
+  height: fit-content;
+}
+
+.foto-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-perfil {
+  width: 140px;
+  height: 140px;
+  background: #e5f2e5;
+  color: #1f5f2e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.avatar-perfil i {
+  font-size: 58px;
+}
+
+.btn-foto {
+  background: #1f5f2e;
+  color: white;
+  padding: 11px 16px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+#fotoVendedor {
+  display: none;
+}
+
+.usuario-card h2 {
+  margin-bottom: 6px;
+}
+
+.usuario-card p {
+  color: #666;
+  margin-bottom: 18px;
+}
+
+.selo-verificado {
+  background: #dff5e1;
+  color: #1f7a35;
+  padding: 12px;
+  border-radius: 14px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.form-perfil {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.linha-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.grupo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.grupo-form label {
+  color: #1f5f2e;
+  font-weight: bold;
+}
+
+.grupo-form input,
+.grupo-form select,
+.grupo-form textarea {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d7d7d7;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+}
+
+.grupo-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.grupo-form input:focus,
+.grupo-form select:focus,
+.grupo-form textarea:focus {
+  border-color: #1f5f2e;
+}
+
+.botoes-perfil {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.btn-cancelar-perfil,
+.btn-salvar-perfil {
+  padding: 14px 22px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.btn-cancelar-perfil {
+  background: #eeeeee;
+  color: #555;
+}
+
+.btn-salvar-perfil {
+  background: #1f5f2e;
+  color: white;
+}
+
+.btn-cancelar-perfil:hover {
+  background: #ddd;
+}
+
+.btn-salvar-perfil:hover {
+  background: #174a24;
+}
+
+.seguranca-card {
+  margin-bottom: 30px;
+}
+
+.seguranca-opcoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.seguranca-item {
+  text-decoration: none;
+  color: #263322;
+  background: #f3f7f1;
+  padding: 18px;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 45px 1fr 20px;
+  gap: 14px;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.seguranca-item > i {
+  background: #e5f2e5;
+  color: #1f5f2e;
+  width: 45px;
+  height: 45px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.seguranca-item strong {
+  color: #1f5f2e;
+}
+
+.seguranca-item p {
+  color: #666;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.seguranca-item span {
+  color: #1f5f2e;
+}
+
+.seguranca-item:hover {
+  background: #e5f2e5;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 900px) {
+  .perfil-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .linha-form {
+    grid-template-columns: 1fr;
+  }
+
+  .seguranca-opcoes {
+    grid-template-columns: 1fr;
+  }
+
+  .botoes-perfil {
+    flex-direction: column;
+  }
+
+  .btn-cancelar-perfil,
+  .btn-salvar-perfil {
+    width: 100%;
+    text-align: center;
+  }
+}
