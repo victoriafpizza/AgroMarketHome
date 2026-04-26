@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Meus Anúncios | AgroMarket</title>
+
+  <link rel="stylesheet" href="../css/vendedor.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2>AgroMarket</h2>
+
+    <nav>
+      <a href="painel.html">
+        <i class="fa-solid fa-chart-line"></i> Painel
+      </a>
+
+      <a href="meus-anuncios.html" class="ativo">
+        <i class="fa-solid fa-box"></i> Meus Anúncios
+      </a>
+
+      <a href="novo-anuncio.html">
+        <i class="fa-solid fa-plus"></i> Novo Anúncio
+      </a>
+
+      <a href="pedidos.html">
+        <i class="fa-solid fa-clipboard-list"></i> Pedidos
+      </a>
+
+      <a href="mensagens.html">
+        <i class="fa-solid fa-comments"></i> Mensagens
+      </a>
+
+      <a href="perfil.html">
+        <i class="fa-solid fa-user"></i> Perfil
+      </a>
+
+      <a href="suporte.html">
+        <i class="fa-solid fa-headset"></i> Suporte
+      </a>
+
+      <a href="../semlogin/index.html" class="sair">
+        <i class="fa-solid fa-right-from-bracket"></i> Sair
+      </a>
+    </nav>
+  </aside>
+
+  <main class="conteudo">
+    <header class="topo">
+      <div>
+        <h1>Produtos Anunciados</h1>
+        <p>Gerencie seus produtos, máquinas e serviços cadastrados.</p>
+      </div>
+
+      <a href="novo-anuncio.html" class="btn-principal">
+        <i class="fa-solid fa-plus"></i> Novo anúncio
+      </a>
+    </header>
+
+    <section class="filtros-anuncios">
+      <input type="text" placeholder="Buscar produto anunciado..." />
+
+      <select>
+        <option>Todos os status</option>
+        <option>Ativo</option>
+        <option>Pausado</option>
+        <option>Vendido</option>
+      </select>
+    </section>
+
+    <section class="lista-anuncios">
+
+      <div class="anuncio-card">
+        <img src="../img/trator.jpg" alt="Trator agrícola" />
+
+        <div class="anuncio-info">
+          <span class="status ativo">Ativo</span>
+          <h2>Trator Massey Ferguson 275</h2>
+          <p>Trator em ótimo estado, ideal para pequenas e médias propriedades.</p>
+
+          <div class="dados-anuncio">
+            <span><i class="fa-solid fa-location-dot"></i> Goiânia - GO</span>
+            <span><i class="fa-solid fa-eye"></i> 120 visualizações</span>
+          </div>
+
+          <strong class="preco">R$ 85.000,00</strong>
+        </div>
+
+        <div class="acoes-anuncio">
+          <a href="#" class="btn-editar">
+            <i class="fa-solid fa-pen"></i> Editar
+          </a>
+
+          <a href="#" class="btn-pausar">
+            <i class="fa-solid fa-pause"></i> Pausar
+          </a>
+
+          <a href="#" class="btn-excluir">
+            <i class="fa-solid fa-trash"></i> Excluir
+          </a>
+        </div>
+      </div>
+
+      <div class="anuncio-card">
+        <img src="../img/milho.jpg" alt="Sacos de milho" />
+
+        <div class="anuncio-info">
+          <span class="status vendido">Vendido</span>
+          <h2>Sacos de Milho - 60kg</h2>
+          <p>Milho seco selecionado para ração e comercialização agrícola.</p>
+
+          <div class="dados-anuncio">
+            <span><i class="fa-solid fa-location-dot"></i> Ribeirão Preto - SP</span>
+            <span><i class="fa-solid fa-eye"></i> 89 visualizações</span>
+          </div>
+
+          <strong class="preco">R$ 72,00 / saco</strong>
+        </div>
+
+        <div class="acoes-anuncio">
+          <a href="#" class="btn-editar">
+            <i class="fa-solid fa-pen"></i> Editar
+          </a>
+
+          <a href="#" class="btn-pausar">
+            <i class="fa-solid fa-rotate-left"></i> Reativar
+          </a>
+
+          <a href="#" class="btn-excluir">
+            <i class="fa-solid fa-trash"></i> Excluir
+          </a>
+        </div>
+      </div>
+
+      <div class="anuncio-card">
+        <img src="../img/pulverizador.jpg" alt="Pulverizador agrícola" />
+
+        <div class="anuncio-info">
+          <span class="status pausado">Pausado</span>
+          <h2>Pulverizador Agrícola</h2>
+          <p>Equipamento usado, revisado e pronto para uso no campo.</p>
+
+          <div class="dados-anuncio">
+            <span><i class="fa-solid fa-location-dot"></i> Londrina - PR</span>
+            <span><i class="fa-solid fa-eye"></i> 64 visualizações</span>
+          </div>
+
+          <strong class="preco">R$ 12.500,00</strong>
+        </div>
+
+        <div class="acoes-anuncio">
+          <a href="#" class="btn-editar">
+            <i class="fa-solid fa-pen"></i> Editar
+          </a>
+
+          <a href="#" class="btn-pausar">
+            <i class="fa-solid fa-play"></i> Ativar
+          </a>
+
+          <a href="#" class="btn-excluir">
+            <i class="fa-solid fa-trash"></i> Excluir
+          </a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+</body>
+</html>

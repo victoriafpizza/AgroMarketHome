@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel do Vendedor | AgroMarket</title>
+
+  <link rel="stylesheet" href="/css/vendedor.css" />
+  <link rel="icon" type="image/png" href="/img/favicon.png">
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2>AgroMarket</h2>
+
+    <nav>
+      <a href="painel.html" class="ativo">
+        <i class="fa-solid fa-chart-line"></i> Painel
+      </a>
+
+      <a href="meus-anuncios.html">
+        <i class="fa-solid fa-box"></i> Meus Anúncios
+      </a>
+
+      <a href="novo-anuncio.html">
+        <i class="fa-solid fa-plus"></i> Novo Anúncio
+      </a>
+
+      <a href="pedidos.html">
+        <i class="fa-solid fa-clipboard-list"></i> Pedidos
+      </a>
+
+      <a href="mensagens.html">
+        <i class="fa-solid fa-comments"></i> Mensagens
+      </a>
+
+      <a href="perfil.html">
+        <i class="fa-solid fa-user"></i> Perfil
+      </a>
+
+      <a href="suporte.html">
+        <i class="fa-solid fa-headset"></i> Suporte
+      </a>
+
+      <a href="/semlogin/index.html" class="sair">
+        <i class="fa-solid fa-right-from-bracket"></i> Sair
+      </a>
+    </nav>
+  </aside>
+
+  <main class="conteudo">
+    <header class="topo">
+      <div>
+        <h1>Painel do Vendedor</h1>
+        <p>Bem-vindo ao seu espaço de vendas no AgroMarket.</p>
+      </div>
+
+      <a href="novo-anuncio.html" class="btn-principal">
+        <i class="fa-solid fa-plus"></i> Criar anúncio
+      </a>
+    </header>
+
+    <section class="cards">
+      <div class="card">
+        <i class="fa-solid fa-box"></i>
+        <div>
+          <h3>12</h3>
+          <p>Anúncios ativos</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-message"></i>
+        <div>
+          <h3>5</h3>
+          <p>Novas mensagens</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <div>
+          <h3>8</h3>
+          <p>Pedidos recebidos</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-eye"></i>
+        <div>
+          <h3>240</h3>
+          <p>Visualizações</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="area-dupla">
+      <div class="box">
+        <h2>Últimos pedidos</h2>
+
+        <div class="item">
+          <div>
+            <strong>Trator Massey Ferguson</strong>
+            <p>Comprador: João Pereira</p>
+          </div>
+          <span class="status novo">Novo</span>
+        </div>
+
+        <div class="item">
+          <div>
+            <strong>Sacos de milho</strong>
+            <p>Comprador: Maria Santos</p>
+          </div>
+          <span class="status andamento">Em conversa</span>
+        </div>
+
+        <div class="item">
+          <div>
+            <strong>Pulverizador agrícola</strong>
+            <p>Comprador: Agro Silva</p>
+          </div>
+          <span class="status finalizado">Finalizado</span>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Ações rápidas</h2>
+
+        <a href="novo-anuncio.html" class="acao">
+          <i class="fa-solid fa-plus"></i>
+          Cadastrar novo produto
+        </a>
+
+        <a href="meus-anuncios.html" class="acao">
+          <i class="fa-solid fa-pen-to-square"></i>
+          Editar meus anúncios
+        </a>
+
+        <a href="mensagens.html" class="acao">
+          <i class="fa-solid fa-comments"></i>
+          Ver mensagens
+        </a>
+
+        <a href="perfil.html" class="acao">
+          <i class="fa-solid fa-user-gear"></i>
+          Atualizar perfil
+        </a>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>
