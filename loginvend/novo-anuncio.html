@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Novo Anúncio | AgroMarket</title>
+
+  <link rel="stylesheet" href="/css/vendedor.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2>AgroMarket</h2>
+
+    <nav>
+      <a href="painel.html">
+        <i class="fa-solid fa-chart-line"></i> Painel
+      </a>
+
+      <a href="meus-anuncios.html">
+        <i class="fa-solid fa-box"></i> Meus Anúncios
+      </a>
+
+      <a href="novo-anuncio.html" class="ativo">
+        <i class="fa-solid fa-plus"></i> Novo Anúncio
+      </a>
+
+      <a href="pedidos.html">
+        <i class="fa-solid fa-clipboard-list"></i> Pedidos
+      </a>
+
+      <a href="mensagens.html">
+        <i class="fa-solid fa-comments"></i> Mensagens
+      </a>
+
+      <a href="perfil.html">
+        <i class="fa-solid fa-user"></i> Perfil
+      </a>
+
+      <a href="suporte.html">
+        <i class="fa-solid fa-headset"></i> Suporte
+      </a>
+
+      <a href="../semlogin/index.html" class="sair">
+        <i class="fa-solid fa-right-from-bracket"></i> Sair
+      </a>
+    </nav>
+  </aside>
+
+  <main class="conteudo">
+    <header class="topo">
+      <div>
+        <h1>Novo Anúncio</h1>
+        <p>Cadastre um produto, máquina ou serviço agrícola para venda ou aluguel.</p>
+      </div>
+    </header>
+
+    <section class="form-anuncio">
+      <form>
+
+        <div class="grupo-form">
+          <label>Nome do anúncio</label>
+          <input type="text" placeholder="Ex: Trator Massey Ferguson 275" required>
+        </div>
+
+        <div class="linha-form">
+          <div class="grupo-form">
+            <label>Categoria</label>
+            <select required>
+              <option value="">Selecione uma categoria</option>
+              <option>Máquinas agrícolas</option>
+              <option>Grãos e sementes</option>
+              <option>Animais</option>
+              <option>Insumos agrícolas</option>
+              <option>Ferramentas</option>
+              <option>Serviços rurais</option>
+              <option>Aluguel de máquinas</option>
+            </select>
+          </div>
+
+          <div class="grupo-form">
+            <label>Tipo de anúncio</label>
+            <select required>
+              <option value="">Selecione</option>
+              <option>Venda</option>
+              <option>Aluguel</option>
+              <option>Serviço</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="linha-form">
+          <div class="grupo-form">
+            <label>Preço</label>
+            <input type="text" placeholder="Ex: R$ 85.000,00" required>
+          </div>
+
+          <div class="grupo-form">
+            <label>Unidade</label>
+            <select>
+              <option>Valor único</option>
+              <option>Por dia</option>
+              <option>Por hora</option>
+              <option>Por saco</option>
+              <option>Por kg</option>
+              <option>Por tonelada</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="linha-form">
+          <div class="grupo-form">
+            <label>Estado</label>
+            <select required>
+              <option value="">Selecione</option>
+              <option>SP</option>
+              <option>MG</option>
+              <option>GO</option>
+              <option>PR</option>
+              <option>MT</option>
+              <option>MS</option>
+              <option>BA</option>
+              <option>RS</option>
+            </select>
+          </div>
+
+          <div class="grupo-form">
+            <label>Cidade</label>
+            <input type="text" placeholder="Ex: Ribeirão Preto" required>
+          </div>
+        </div>
+
+        <div class="grupo-form">
+          <label>Descrição do anúncio</label>
+          <textarea placeholder="Descreva o produto, estado de conservação, forma de entrega, condições de pagamento..." required></textarea>
+        </div>
+
+        <div class="grupo-form">
+          <label>Imagem do produto</label>
+
+          <div class="upload-box">
+            <i class="fa-solid fa-cloud-arrow-up"></i>
+            <p>Clique para enviar uma imagem</p>
+            <span>PNG, JPG ou JPEG</span>
+            <input type="file" accept="image/*">
+          </div>
+        </div>
+
+        <div class="botoes-form">
+          <a href="meus-anuncios.html" class="btn-cancelar">
+            Cancelar
+          </a>
+
+          <button type="submit" class="btn-salvar">
+            <i class="fa-solid fa-check"></i> Publicar anúncio
+          </button>
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+</body>
+</html>
