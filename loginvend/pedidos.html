@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Pedidos | AgroMarket</title>
+
+  <link rel="stylesheet" href="/css/vendedor.css" />
+  <link rel="stylesheet" href="/css/pedidos.css" />
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+</head>
+<body>
+
+  <aside class="sidebar">
+    <h2>AgroMarket</h2>
+
+    <nav>
+      <a href="painel.html">
+        <i class="fa-solid fa-chart-line"></i> Painel
+      </a>
+
+      <a href="meus-anuncios.html">
+        <i class="fa-solid fa-box"></i> Meus Anúncios
+      </a>
+
+      <a href="novo-anuncio.html">
+        <i class="fa-solid fa-plus"></i> Novo Anúncio
+      </a>
+
+      <a href="pedidos.html" class="ativo">
+        <i class="fa-solid fa-clipboard-list"></i> Pedidos
+      </a>
+
+      <a href="mensagens.html">
+        <i class="fa-solid fa-comments"></i> Mensagens
+      </a>
+
+      <a href="perfil.html">
+        <i class="fa-solid fa-user"></i> Perfil
+      </a>
+
+      <a href="suporte.html">
+        <i class="fa-solid fa-headset"></i> Suporte
+      </a>
+
+      <a href="/index.html" class="sair">
+        <i class="fa-solid fa-right-from-bracket"></i> Sair
+      </a>
+    </nav>
+  </aside>
+
+  <main class="conteudo">
+
+    <header class="topo">
+      <div>
+        <h1>Pedidos Recebidos</h1>
+        <p>Acompanhe os compradores interessados nos seus produtos e serviços.</p>
+      </div>
+
+      <a href="meus-anuncios.html" class="btn-principal">
+        <i class="fa-solid fa-box"></i> Ver anúncios
+      </a>
+    </header>
+
+    <section class="resumo-pedidos">
+      <div class="card-pedido-resumo">
+        <i class="fa-solid fa-bell"></i>
+        <div>
+          <h3>4</h3>
+          <p>Novos pedidos</p>
+        </div>
+      </div>
+
+      <div class="card-pedido-resumo">
+        <i class="fa-solid fa-comments"></i>
+        <div>
+          <h3>7</h3>
+          <p>Em conversa</p>
+        </div>
+      </div>
+
+      <div class="card-pedido-resumo">
+        <i class="fa-solid fa-circle-check"></i>
+        <div>
+          <h3>12</h3>
+          <p>Finalizados</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="filtros-pedidos">
+      <input type="text" placeholder="Buscar por comprador ou produto..." />
+
+      <select>
+        <option>Todos os status</option>
+        <option>Novo</option>
+        <option>Em conversa</option>
+        <option>Finalizado</option>
+        <option>Cancelado</option>
+      </select>
+    </section>
+
+    <section class="lista-pedidos">
+
+      <div class="pedido-card">
+        <div class="pedido-info">
+          <span class="status-pedido novo">Novo</span>
+
+          <h2>Trator Massey Ferguson 275</h2>
+
+          <p>
+            <i class="fa-solid fa-user"></i>
+            Comprador: João Pereira
+          </p>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Goiânia - GO
+          </p>
+
+          <p>
+            <i class="fa-solid fa-calendar"></i>
+            Pedido recebido em 26/04/2026
+          </p>
+        </div>
+
+        <div class="pedido-valores">
+          <strong>R$ 85.000,00</strong>
+          <span>Venda</span>
+        </div>
+
+        <div class="pedido-acoes">
+          <a href="detalhe-pedido.html" class="btn-ver">
+            <i class="fa-solid fa-eye"></i> Ver detalhes
+          </a>
+
+          <a href="mensagens.html" class="btn-conversar">
+            <i class="fa-solid fa-comments"></i> Conversar
+          </a>
+        </div>
+      </div>
+
+      <div class="pedido-card">
+        <div class="pedido-info">
+          <span class="status-pedido conversa">Em conversa</span>
+
+          <h2>Sacos de Milho - 60kg</h2>
+
+          <p>
+            <i class="fa-solid fa-user"></i>
+            Compradora: Maria Santos
+          </p>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Ribeirão Preto - SP
+          </p>
+
+          <p>
+            <i class="fa-solid fa-calendar"></i>
+            Pedido recebido em 25/04/2026
+          </p>
+        </div>
+
+        <div class="pedido-valores">
+          <strong>R$ 72,00 / saco</strong>
+          <span>Venda</span>
+        </div>
+
+        <div class="pedido-acoes">
+          <a href="detalhe-pedido.html" class="btn-ver">
+            <i class="fa-solid fa-eye"></i> Ver detalhes
+          </a>
+
+          <a href="mensagens.html" class="btn-conversar">
+            <i class="fa-solid fa-comments"></i> Conversar
+          </a>
+        </div>
+      </div>
+
+      <div class="pedido-card">
+        <div class="pedido-info">
+          <span class="status-pedido finalizado">Finalizado</span>
+
+          <h2>Pulverizador Agrícola</h2>
+
+          <p>
+            <i class="fa-solid fa-user"></i>
+            Comprador: Agro Silva
+          </p>
+
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            Londrina - PR
+          </p>
+
+          <p>
+            <i class="fa-solid fa-calendar"></i>
+            Pedido recebido em 22/04/2026
+          </p>
+        </div>
+
+        <div class="pedido-valores">
+          <strong>R$ 12.500,00</strong>
+          <span>Venda</span>
+        </div>
+
+        <div class="pedido-acoes">
+          <a href="detalhe-pedido.html" class="btn-ver">
+            <i class="fa-solid fa-eye"></i> Ver detalhes
+          </a>
+
+          <a href="meus-anuncios.html" class="btn-anuncio">
+            <i class="fa-solid fa-box"></i> Ver anúncio
+          </a>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+</body>
+</html>
