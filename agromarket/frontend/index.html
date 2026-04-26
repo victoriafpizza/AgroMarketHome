@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AgroMarket</title>
-  <link rel="icon" type="image/png" href="/img/favicon.png">
+  <link rel="icon" type="image/png" href="/agromarket/app/favicon.ico">
 
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="/agromarket/frontend/css/style.css" />
 
   <!-- Ícones -->
   <link
@@ -24,14 +24,18 @@
     </div>
 
     <nav class="menu">
-      <a href="semlogin/index.html">Início</a>
-      <a href="semlogin/produtos.html">Produtos</a>
-      <a href="semlogin/maquinas.html">Máquinas</a>
-      <a href="semlogin/fretes.html">Fretes</a>
+      <a href="/agromarket/frontend/index.html">Início</a>
+      <a href="/agromarket/frontend/semlogin/produtos.html"">Produtos</a>
+      <a href="/agromarket/frontend/semlogin/maquinas.html">Máquinas</a>
+      <a href="/agromarket/frontend/semlogin/fretes.html">Fretes</a>
     </nav>
 
-    <a class="btn-login" href="semlogin/cadastro.html">Cadastrar</a>
+    <a class="btn-login" href="/agromarket/frontend/semlogin/cadastro.html">Cadastrar</a>
   </header>
+
+  <div id="lista-produtos"></div>
+
+<script src="/agromarket/frontend/js/produto.js"></script>
 
   <!-- HERO -->
   <section class="hero">
@@ -45,7 +49,7 @@
         em todo o Brasil.
       </p>
 
-      <form class="search-box" action="resultado-busca.html" method="GET">
+      <form class="search-box" action="/agromarket/frontend/resultado-busca.html" method="GET">
         <i class="fa-solid fa-magnifying-glass"></i>
         <input 
           type="text" 
@@ -65,21 +69,21 @@
     <div class="cards">
 
       <!-- PRODUTOS -->
-      <a href="semlogin/produtos.html" class="card">
+      <a href="/agromarket/frontend/semlogin/produtos.html" class="card">
         <i class="fa-solid fa-seedling"></i>
         <h3>Produtos</h3>
         <p>Grãos, sementes, insumos e itens do campo.</p>
       </a>
 
       <!-- MÁQUINAS -->
-      <a href="semlogin/maquinas.html" class="card">
+      <a href="/agromarket/frontend/semlogin/maquinas.html" class="card">
         <i class="fa-solid fa-tractor"></i>
         <h3>Máquinas</h3>
         <p>Venda e aluguel de tratores e equipamentos.</p>
       </a>
 
       <!-- FRETES -->
-      <a href="semlogin/fretes.html" class="card">
+      <a href="/agromarket/frontend/semlogin/fretes.html" class="card">
         <i class="fa-solid fa-truck"></i>
         <h3>Fretes</h3>
         <p>Transporte rural e parceiros para entrega.</p>
@@ -95,7 +99,7 @@
     <div class="highlight-grid">
 
       <!-- MILHO -->
-      <a href="semlogin/detalhe-produto.html" class="highlight-card">
+      <a href="/agromarket/frontend/semlogin/detalhe-produto.html" class="highlight-card">
         <div class="image-placeholder">
           <i class="fa-solid fa-wheat-awn"></i>
         </div>
@@ -105,7 +109,7 @@
       </a>
 
       <!-- TRATOR -->
-      <a href="semlogin/detalhe-maquina.html" class="highlight-card">
+      <a href="/agromarket/frontend/semlogin/detalhe-maquina.html" class="highlight-card">
         <div class="image-placeholder">
           <i class="fa-solid fa-tractor"></i>
         </div>
@@ -115,7 +119,7 @@
       </a>
 
       <!-- GADO -->
-      <a href="semlogin/detalhe-produto.html" class="highlight-card">
+      <a href="/agromarket/frontend/semlogin/detalhe-produto.html" class="highlight-card">
         <div class="image-placeholder">
           <i class="fa-solid fa-cow"></i>
         </div>
@@ -131,7 +135,7 @@
   <section class="cta">
     <h2>Quer vender ou alugar algo?</h2>
     <p>Anuncie seus produtos, máquinas ou serviços no AgroMarket.</p>
-    <a href="semlogin/cadastro.html" class="btn-anunciar">
+    <a href="/agromarket/frontend/semlogin/cadastro.html" class="btn-anunciar">
       Anunciar agora
     </a>
   </section>
@@ -145,7 +149,7 @@
 
     <div>
       <h4>Empresa</h4>
-      <a href="semlogin/sobre.html">Sobre nós</a>
+      <a href="/agromarket/frontend/semlogin/sobre.html">Sobre nós</a>
       <a href="#">Contato</a>
     </div>
 
@@ -156,6 +160,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="/agromarket/frontend/js/script.js"></script>
 </body>
 </html>
